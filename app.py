@@ -17,8 +17,6 @@ logger = logging.getLogger(__name__)
 # Load environment variables and configure Gemini
 load_dotenv()
 GEMINI_API_KEY = os.getenv('GEMINI_API')
-if not GEMINI_API_KEY:
-    raise ValueError("GEMINI_API_KEY not found in environment variables")
 genai.configure(api_key=GEMINI_API_KEY)
 
 VOLUMIO_MODEL = genai.GenerativeModel("gemini-2.0-flash-exp")
