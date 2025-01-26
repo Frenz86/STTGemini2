@@ -1,0 +1,5 @@
+streamlit
+SpeechRecognition
+google-generativeai
+python-dotenv
+audio-recorder-streamlit
